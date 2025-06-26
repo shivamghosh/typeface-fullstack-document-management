@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS FILE_METADATA;
+
+-- Create a table from the csv
+CREATE TABLE FILE_METADATA AS SELECT * FROM CSVREAD('FileMetadata.csv');
